@@ -390,7 +390,9 @@ function displayFace(divName, obj, isLocalFile){
 
 					context.fillStyle="#00FF00";
 					context.font="30px";
-					context.fillText(obj.faces[i].BoxsPoints[bi].age,obj.faces[i].BoxsPoints[bi].box[0], obj.faces[i].BoxsPoints[bi].box[1]+10);
+					age = obj.faces[i].BoxsPoints[bi].age
+					gender = obj.faces[i].BoxsPoints[bi].gender
+					context.fillText(age+", "+gender,obj.faces[i].BoxsPoints[bi].box[0], obj.faces[i].BoxsPoints[bi].box[1]+10);
 				}
 				break;
 			}
