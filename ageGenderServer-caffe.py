@@ -28,7 +28,7 @@ ONet = caffe.Net(caffe_model_path+"/det3.prototxt", caffe_model_path+"/det3.caff
 
 imgSavePath = "static/uploadImages"
 FACE_FEED_SIZE = 224    # age and gender input shape
-models_dir="pretrained"
+models_dir="models"
 gender_model_def = models_dir+'/gender.prototxt'
 gender_model_weights = models_dir+'/gender.caffemodel'
 age_model_def = models_dir+'/age.prototxt'
